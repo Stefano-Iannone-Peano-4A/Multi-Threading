@@ -5,6 +5,7 @@ Il Multithreading migliora le prestazioni dei programmi solamente quando questi 
 Abbiamo implementato il Multithreading per fare in modo che le due classi utilizzate stampassero contemporaneamente i messaggi in output.
 Con l'uso di due classi che estendevano un thread ognuno, mandandoli in output tramite dei for, si è potuto notare che i messaggi non erano ordinati a seconda della loro classe di appartenenza, ma mischiati tra di loro senza logica. 
 A causa dei due thread che agiscono in contemporanea, i messaggi di output sono mischiati.
+
 Esempio 1:
 hi
 hello
@@ -22,6 +23,8 @@ hi
 hi
 hi
 hi
+
+
 Esempio 2:
 hello
 hello
@@ -39,6 +42,8 @@ hello
 hello
 hi
 hi
+
+
 Esempio 3:
 hello
 hi
@@ -57,6 +62,8 @@ hi
 hi
 hi
 hi
+
+
 Descrizione Classe Say:
 abbiamo creato la classe Say contenente l'attrubuto di tipo String che verrà visualizzata in output.
 Con l'utilizzo del metodo run() e al suo interno un ciclo for{} abbiamo stampato la stringa.
