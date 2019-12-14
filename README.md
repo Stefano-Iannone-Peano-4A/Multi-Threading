@@ -69,3 +69,8 @@ abbiamo creato la classe Say contenente l'attrubuto di tipo String che verrà vi
 Con l'utilizzo del metodo run() e al suo interno un ciclo for{} abbiamo stampato la stringa.
 Nel main abbiamo creato due oggetti dello stesso tipo successivamente, per entrambi abbiamo usato lo start(), in modo da avviare i thread cooperanti.
 Avendo i due thread tempi di esecuzione differenti, l'output mostrava la cooperazione dei thread a stampare i messaggi.
+
+start() serve per avviare il metodo run().
+Il metodo run() contiene il codice che deve svolgere il thread; viene avviato tramite il metodo start().
+Extends permette alla classe che ha usato questo comando di usare tutti i metodi della classe Thread.
+
