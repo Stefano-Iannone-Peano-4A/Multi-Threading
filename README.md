@@ -71,6 +71,13 @@ Nel main abbiamo creato due oggetti dello stesso tipo successivamente, per entra
 Avendo i due thread tempi di esecuzione differenti, l'output mostrava la cooperazione dei thread a stampare i messaggi.
 
 start() serve per avviare il metodo run().
+
 Il metodo run() contiene il codice che deve svolgere il thread; viene avviato tramite il metodo start().
+
 Extends permette alla classe che ha usato questo comando di usare tutti i metodi della classe Thread.
 
+wait() dice al thread che chiama questo metodo di mettersi in attesa e di aspettare che un altro thread chiami il notify().
+
+notify() chiama solo un thread tra quelli in attesa. La scelta del thread da chiamare la compie Java Virtual Machine.
+
+notifyAll() chiama tutti i thread in attesa. Il thread con la priorità maggiore si avvierà per primo.
